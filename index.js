@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Blockly JavaScript code generation
     document.getElementById('generate-code').addEventListener('click', function() {
         var code = Blockly.JavaScript.workspaceToCode(workspace);
-        console.log(code); // Output generated code
-        // You can further process or execute the generated code here
+        console.log(code);
+        eval(code)
     });
 });

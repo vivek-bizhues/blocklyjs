@@ -7,18 +7,48 @@
     <link href="https://unpkg.com/blockly/blockly.css" rel="stylesheet">
 </head>
 <body>
-    <div id="blocklyDiv" style="height: 480px; width: 900px;"></div>
+    <h1>Blockly Playground</h1>
+    <div id="blocklyDiv" style="height: 580px; width: 1100px;"></div>
     <xml id="toolbox" style="display: none">
         <!-- Define your blocks here -->
         <block type="controls_if"></block>
         <block type="logic_compare"></block>
-        <!-- Add more blocks as needed -->
+        <block type="text_print"></block>
+        <block type="math_number"></block>
+        <block type="text"></block>
+        <block type="variables_get"></block>
+        <block type="lists_create_with">
+            <mutation items="3"></mutation>
+            <value name="ADD0">
+              <block type="text">
+                <field name="TEXT">item1</field>
+              </block>
+            </value>
+            <value name="ADD1">
+              <block type="text">
+                <field name="TEXT">item2</field>
+              </block>
+            </value>
+            <value name="ADD2">
+              <block type="text">
+                <field name="TEXT">item3</field>
+              </block>
+            </value>
+          </block>
     </xml>
 
-    <script src="https://unpkg.com/blockly/blockly_compressed.js"></script>
-    <script src="https://unpkg.com/blockly/blocks_compressed.js"></script>
-    <script src="https://unpkg.com/blockly/javascript_compressed.js"></script>
+    <button id="generate-code">Generate Code</button> 
+
+
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="https://unpkg.com/blockly/javascript.min.js"></script>
+    <script src="https://unpkg.com/blockly/blocks/logic.js"></script>
+    <script src="https://unpkg.com/blockly/blocks/controls.js"></script>
+    <script src="https://unpkg.com/blockly/blocks/text.js"></script>
+    <script src="https://unpkg.com/blockly/blocks/math.js"></script>
+    <script src="https://unpkg.com/blockly/blocks/lists.js"></script>
+    <script src="https://unpkg.com/blockly/blocks/variables.js"></script>
     <script src="https://unpkg.com/blockly/msg/js/en.js"></script>
-    <script src="index.js"></script> <!-- Your JavaScript file -->
+    <script src="index.js"></script>
 </body>
 </html>
