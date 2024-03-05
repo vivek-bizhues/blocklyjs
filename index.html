@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockly Playground</title>
+    <link href="https://unpkg.com/blockly/blockly.css" rel="stylesheet">
+</head>
+<body>
+    <div id="blocklyDiv" style="height: 480px; width: 900px;"></div>
+    <xml id="toolbox" style="display: none">
+        <!-- Define your blocks here -->
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <!-- Add more blocks as needed -->
+    </xml>
+
+    <script src="https://unpkg.com/blockly/blockly_compressed.js"></script>
+    <script src="https://unpkg.com/blockly/blocks_compressed.js"></script>
+    <script src="https://unpkg.com/blockly/javascript_compressed.js"></script>
+    <script src="https://unpkg.com/blockly/msg/js/en.js"></script>
+    <script src="index.js"></script> <!-- Your JavaScript file -->
+</body>
+</html>
